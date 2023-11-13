@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[none]{hyphenat}
+\usepackage[a4paper, margin=1.5in]{geometry}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\title{Bullets and Numbering}
+\author{Navya Dasari}
+\date{\today}
+\usepackage{lipsum}
+
+\begin{document}
+	\maketitle
+	\section{Standard Colors}
+	
+	\begin{itemize}
+		\item red
+		\item blue
+		\item green
+	\end{itemize}
+	
+	\section{More Colors}
+	\begin{enumerate}
+		\item Maroon
+		\item Cyan
+		\item Plum
+	\end{enumerate}
+	
+	\section{Description List}
+	
+	\begin{description}
+		\item[Input Devices:] Keyboard, Mouse
+		
+		\item[Output Devices:] Printer, Monitor
+	\end{description}
+	
+	\section{Nesting lists}
+	
+		\begin{itemize}
+			\item red
+				\begin{itemize}
+					\item brick red
+					\item post office red
+					\item blood red
+				\end{itemize}
+		\end{itemize}
+
+	\section{Numbering Style}
+	
+		\begin{itemize}
+			\item red
+			\begin{enumerate}[A.]
+				\item brick red
+				\item post office red
+				\item blood red
+			\end{enumerate}
+		\end{itemize}
+	
+	\renewcommand{\labelitemi}{$\diamond$}
+	\renewcommand{\labelitemii}{$\blacksquare$}
+	\section{Bullet Style}
+	
+		\begin{itemize}
+			\item red
+			\begin{itemize}
+				\item brick red
+				\item post office red
+				\item blood red
+			\end{itemize}
+			\item blue
+			\item green
+		\end{itemize}
+		
+		
+\end{document}

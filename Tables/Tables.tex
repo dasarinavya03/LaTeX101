@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage[none]{hyphenat}
+\usepackage[a4paper, margin=1.5in]{geometry}
+\usepackage{multirow}
+\title{Tables}
+\author{Navya Dasari}
+\date{\today}
+\usepackage{lipsum}
+
+\begin{document}
+	\maketitle
+	
+	\section{Basic table}
+	
+		\begin{tabular}{clr}
+		
+		No.	&	Item	&	Price \\
+		1	&	Pen		& 10 \\
+		2	&	Pencil	& 5 \\
+		
+		\end{tabular}
+		
+	\section{Table with borders}
+		\begin{tabular}{|c|l|r|}
+			\hline
+			No.	&	Item	&	Price \\
+			\hline
+			1	&	Pen		& 10 \\
+			\hline
+			2	&	Pencil	& 5 \\
+			\hline
+			
+		\end{tabular}
+		
+	\section{Merge Rows}
+	
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		No. & Item & Quantity & Price \\
+		\hline
+		1	& Pen & \multirow{2}{*}{3} & 10 \\
+		\cline{1-2}\cline{4-4}
+		2 & Pencil & & 5 \\
+		\hline
+	\end{tabular}
+	
+	\section{Merge Column}
+	
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Stationary Items} \\
+		\hline
+		No. & Item & Quantity & Price \\
+		\hline
+		1	& Pen & \multirow{2}{*}{3} & 10 \\
+		\cline{1-2}\cline{4-4}
+		2 & Pencil & & 5 \\
+		\hline
+	\end{tabular}
+	
+	\section{Spacing}
+	
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{Stationary Items} \\
+		\hline
+		No. & Item & Quantity & Price \\
+		\hline
+		1	& Pen & \multirow{2}{*}{3} & 10 \\
+		\cline{1-2}\cline{4-4}
+		2 & Pencil & & 5 \\
+		\hline
+	\end{tabular}
+	
+	\section{Table Environment}
+	
+	\lipsum[1-2]
+	
+	\begin{table}[h]
+		
+		\centering
+		
+			\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\multicolumn{4}{|c|}{Stationary Items} \\
+			\hline
+			No. & Item & Quantity & Price \\
+			\hline
+			1	& Pen & \multirow{2}{*}{3} & 10 \\
+			\cline{1-2}\cline{4-4}
+			2 & Pencil & & 5 \\
+			\hline
+		\end{tabular}
+		
+		\caption{Stationary Items}
+		
+	\end{table}
+	
+\end{document}
