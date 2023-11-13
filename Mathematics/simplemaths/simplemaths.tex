@@ -1,0 +1,177 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage[none]{hyphenat}
+\usepackage[a4paper, margin=1.5in]{geometry}
+\title{Mathematics}
+\author{Navya Dasari}
+\date{\today}
+\usepackage{lipsum}
+
+\begin{document}
+	\maketitle
+	
+	\section{Simple Mathematics}
+	
+	\paragraph{}
+	
+	The basic mathematical equations are written here using LaTeX: \\
+	
+	$2^2 + 2^2 = 8$ \\
+	
+	$\sqrt[4]{4096} = 8$ \\
+	
+	$e^{x+iy} = e^x(\cos y + i\sin y)$ \\
+	
+	$A \cup B = n(A) + n(B) - n(A \cap B)$ \\
+	
+	$\cos^2\theta + \sin^2\theta = 1$  \\
+	
+	$A \cup B = \{x \in A \ {or} \ x \in B\}$
+	
+	\section{Fractions}
+	
+	\paragraph{}
+	
+	Simple Fractions are written here in LaTeX: \\
+	
+	$fraction = \frac{numerator}{denominator}$  \\
+	
+	$\frac{2}{3}$  \\
+	
+	$\frac{8}{\frac{8}{3}}$ \\
+	
+	$\frac{a}{b} \geq \frac{c}{d}$  \\
+	
+	$\frac{\sqrt{x + 2}}{x^2 - 3}$  \\
+	
+	$\frac{a}{\frac{b}{c}} \times \frac{\frac{d}{e}}{f} \geq 1$
+	
+	\section{Variable Size of Braces}
+	
+	% \Bigg , \bigg , \Big , $\big$
+	
+	\paragraph{}
+	
+	Here, Different sizes of braces are used to write the equation in LaTeX: \\
+	
+	$ \bigg[\Big\{\big(7+3\big)/5 \Big\} \times 6 \bigg]$ \\[12pt]
+	
+	
+	$\bigg\{\Big(\frac{8}{4} \Big) + \Big(\frac{10}{2}\Big)\bigg\}$ \\
+		
+	\section{Summation}
+	
+	\paragraph{}
+	
+	How to write summation in LaTeX??
+	
+	\[\sum_{i=a}^{b}g(i) = 0, {for} \ b < a\] \\
+	
+	\[\sum_{i=1}^{n}i = \frac{n(n+1)}{2}\] \\
+	
+	\section{Integration and Limits}
+	
+	\[\int_{0}^{\infty}f(x)dx\] \\
+	
+	\[\lim_{x \to c} f(x) = L\]  \\
+	
+	\newpage
+	
+	\section{Matrix}
+	
+	 	% matrix: without border
+	 	% pmatrix : with round border
+	 	% bmatrix : with box bracket
+	 	% Bmatrix : with curly bracket
+	 	% vmatrix : with |
+	 	% Vmatrix : with ||
+	 	% & denotes the new column
+	 	% \\ denotes a new row
+	\paragraph{}
+	
+	Matrix written in LaTeX: \\
+	
+	$
+	\begin{pmatrix}
+		20 & 40 & 50 \\
+		34 & 48 & 60 \\
+		40 & 50 & 60 \\
+	\end{pmatrix}
+	$	\\[12pt]
+	
+	$
+	\begin{bmatrix}
+		20 & 40 & 50 \\
+		34 & 48 & 60 \\
+		40 & 50 & 60 \\
+	\end{bmatrix}
+	$ \\[12pt]
+	
+	\section{Addition of Matrix}
+	
+	\paragraph{}
+	
+	Matrix Addition is shown here: \\
+	
+	$
+	\begin{pmatrix}
+		1 & 2 \\
+		3 & 4 \\
+	\end{pmatrix}
+	+
+	\begin{pmatrix}
+		5 & 6 \\
+		7 & 8 \\
+	\end{pmatrix}
+	=
+	\begin{pmatrix}
+		6 & 8 \\
+		10 & 12 \\
+	\end{pmatrix}
+	$ \\[12pt]
+	
+	$
+	\begin{bmatrix}
+		1 & 2 \\
+		3 & 4 \\
+	\end{bmatrix}
+	+
+	\begin{bmatrix}
+		5 & 6 \\
+		7 & 8 \\
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		6 & 8 \\
+		10 & 12 \\
+	\end{bmatrix}
+	$
+	
+	\section{Equation}
+	
+	\paragraph{}
+	
+	In this section, it is shown how equations are centered and numbered in LaTeX.
+	
+	\begin{equation}
+		3x + 4y = 2
+	\end{equation}
+	
+	\begin{equation}
+		15x + 25y = 40
+	\end{equation}
+	
+	\begin{equation}
+		x^{2} - y^{2} = (x+y)(x-y)
+	\end{equation}
+	
+	\section{Equation Align Environment}
+	
+	\begin{align}
+		3x - 6 = 9  \\
+		3x& = 9 + 6 \nonumber \\
+		x& = \frac{9+6}{3} \nonumber \\
+		x& = 5 \nonumber
+	\end{align}
+	
+\end{document}
