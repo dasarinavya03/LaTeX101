@@ -1,0 +1,27 @@
+%Specific Part Landscape
+% Package
+% usepackage{lscape} - rotates content by 90 degrees
+% usepackage{pdfscape} - rotate page by 90 degrees
+% \begin{landscape} and \end{landscape} is necessary.
+\documentclass{article}
+\title{Specific Part Landscape Orientation}
+\author{Navya Dasari}
+\date{\today}
+\usepackage{lipsum}
+%\usepackage{lscape}
+\usepackage{pdflscape}
+
+\begin{document}
+	\maketitle
+	
+	\section{Title}
+	\lipsum[1-2]
+	
+	\begin{landscape}
+		
+		\section{Second Title}
+		\lipsum[1-2]
+	
+	\end{landscape}
+	
+\end{document}

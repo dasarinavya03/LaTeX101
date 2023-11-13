@@ -1,0 +1,21 @@
+%multicolumn, use package - multicol
+\documentclass{article}
+\usepackage[none]{hyphenat}
+\title{Multi Column Document}
+\author{Navya Dasari}
+\date{\today}
+\usepackage{lipsum}
+\usepackage{multicol}
+
+\begin{document}
+	\maketitle
+	\setlength{\columnsep}{25pt}
+	\setlength{\columnseprule}{2pt}
+	
+	\begin{multicols}{3}
+	
+		\lipsum{1-30}
+	
+	\end{multicols}
+	
+\end{document}
