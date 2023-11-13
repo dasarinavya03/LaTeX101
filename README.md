@@ -1,6 +1,6 @@
-# Essential Tools for Scientific Computing - LaTeX
+## Essential Tools for Scientific Computing - LaTeX
 
-## Getting started with LaTeX
+### Getting started with LaTeX
 - First LaTeX Document
 - Defining section in article
 - Defining sections in book
@@ -11,7 +11,7 @@
 - Footnotes
 - Two column and multi column document
 
-## Formatting Text
+### Formatting Text
 - Font style
 - Font size
 - Coloring Text and Pages
@@ -19,7 +19,7 @@
 - Horizantal and Vertical Spacing
 - Text Alignment
 
-## Mathematics
+### Mathematics
 - Simple Mathematics
 - Fractions
 - Different sizes of brackets
@@ -30,7 +30,7 @@
 - Equation
 - Equation Align Environment
 
-## Tables
+### Tables
 - Basic Table
 - Table with borders
 - Merge rows and Columns
